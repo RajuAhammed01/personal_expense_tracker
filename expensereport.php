@@ -156,7 +156,7 @@ $totalAmount = mysqli_fetch_assoc($totalResult)['total'];
                                         <tr class="text-center">
                                             <th>#</th>
                                             <th><?php echo $tableHeader; ?></th>
-                                            <th>Total Amount (₹)</th>
+                                            <th>Total Amount (৳)</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -173,12 +173,12 @@ $totalAmount = mysqli_fetch_assoc($totalResult)['total'];
                                         <tr>
                                             <td class="text-center"><?php echo $count++; ?></td>
                                             <td><?php echo $period; ?></td>
-                                            <td class="text-right">₹ <?php echo number_format($row['total'], 2); ?></td>
+                                            <td class="text-right">৳ <?php echo number_format($row['total'], 2); ?></td>
                                         </tr>
                                         <?php endwhile; ?>
                                         <tr class="table-success">
                                             <td colspan="2" class="text-right"><strong>Grand Total:</strong></td>
-                                            <td class="text-right"><strong>₹ <?php echo number_format($grandTotal, 2); ?></strong></td>
+                                            <td class="text-right"><strong>৳ <?php echo number_format($grandTotal, 2); ?></strong></td>
                                         </tr>
                                     </tbody>
                                 </table>
